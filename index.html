@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotel Aurora Palace</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hotel Aurora Palace</h1>
+      <p>Donde el descanso se convierte en una experiencia inolvidable</p>
+    </header>
+    <main>
+      <section>
+        <h2>Sobre nosotros</h2>
+        <p>
+          El Hotel Aurora Palace es un hotel ficticio situado frente al mar,
+          diseñado para ofrecer confort, calidad y una experiencia única a todos
+          nuestros huéspedes.
+        </p>
+        <h3>Servicios</h3>
+        <ul>
+          <li>Wifi gratuito</li>
+          <li>Piscina, spa y gimnasio</li>
+          <li>Restaurante y desayuno buffet</li>
+          <li>Parking privado</li>
+        </ul>
+      </section>
+      <section class="destacada">
+        <h2>Oferta especial</h2>
+        <p>20% de descuento en estancias de fin de semana.</p>
+      </section>
+      <section>
+        <h2>Nuestras habitaciones</h2>
+        <div class="cards">
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg"
+              alt="Habitación Standard"
+            />
+            <h3>Habitación Standard</h3>
+            <p>Desde 80€/noche</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg"
+              alt="Habitación Standard"
+            />
+            <h3>Habitación Standard</h3>
+            <p>Desde 85€/noche</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg"
+              alt="Habitación Premium"
+            />
+            <h3>Habitación Premium</h3>
+            <p>Desde 120€/noche</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg"
+              alt="Habitación Premium"
+            />
+            <h3>Habitación Premium</h3>
+            <p>Desde 130€/noche</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/237371/pexels-photo-237371.jpeg"
+              alt="Habitación Deluxe"
+            />
+            <h3>Habitación Deluxe</h3>
+            <p>Desde 180€/noche</p>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg"
+              alt="Habitación Deluxe"
+            />
+            <h3>Habitación Deluxe</h3>
+            <p>Desde 195€/noche</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Contacto</h2>
+        <form>
+          <label>Nombre</label>
+          <input type="text" />
+
+          <label>Email</label>
+          <input type="email" />
+
+          <label>Mensaje</label>
+          <textarea></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Autor: Tu Nombre</p>
+      <p>Curso: Desarrollo Web</p>
+      <p>© 2025</p>
+    </footer>
+
+    <!-- CHATBOT -->
+    <div id="chatbot">
+      <div id="chat-header">Asistente Hotel Aurora Palace</div>
+
+      <div id="chat-messages"></div>
+
+      <div id="chat-options">
+        <button onclick="quickOption('servicios')">Servicios</button>
+        <button onclick="quickOption('habitaciones')">Habitaciones</button>
+        <button onclick="quickOption('recomendaciones')">
+          Recomendaciones
+        </button>
+        <button onclick="quickOption('recepcion')">Hablar con recepción</button>
+      </div>
+
+      <div id="chat-input">
+        <input type="text" id="userInput" placeholder="Escribe tu mensaje..." />
+        <button onclick="sendMessage()">Enviar</button>
+      </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+  </body>
+</html>
